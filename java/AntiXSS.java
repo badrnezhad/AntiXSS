@@ -20,7 +20,7 @@ public class AntiXSS {
     }
 
     public static String antiXSS(String input) {
-        return antiXSS(input, false, "^[a-zA-Z0-9]*");
+        return antiXSS(input, false, "^[a-zA-Z0-9, !@#$%^&*()_+=-]*");
     }
     //endregion
 }
