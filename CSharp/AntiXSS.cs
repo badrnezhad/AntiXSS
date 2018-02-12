@@ -8,7 +8,7 @@ namespace PC.Framework
   {
      #region *** Antix XSS ***
 
-        public static string AntiXSS(string input, bool disableHtmlEncoding = false, string allowRegex = "^[a-zA-Z0-9]*")
+        public static string AntiXSS(string input, bool disableHtmlEncoding = false, string allowRegex = "^[a-zA-Z0-9, !@#$%^&*()_+=-]*")
         {
             try
             {
